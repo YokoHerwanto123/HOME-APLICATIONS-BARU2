@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+*,
+
+/* Setting html */
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('assets/cursor.png'), auto;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.layouts {
+    width: 476px;
+    margin: 0 auto;
+    height: 100vh;
+    border: 1px solid darkblue;
+    position: relative;
+}
+
+.topbar {
+    background-color: darkblue;
+    padding: 16px;
+    text-align: center;
+
+}
+
+.topbar h3 {
+    color: white;
+    font-weight: 800;
+}
+
+
+/* Setting buttom bar bawah */
+.bar-bawah {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: darkblue;
+    width: 100%;
+}
+
+.bar-bawah ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+}
+
+.bar-bawah ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.bar-bawah ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    display: block;
+}
+
+
+
+/* Setting gambar di index.html */
+.index {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    /*overflow-y: scroll;*/
+    padding: 32px;
+    gap: 16px;
+}
+
+.item-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    /*background-color: white;*/
+    /*box-shadow: 0px 0px 4px 1px #999;*/
+    height: 400px; 
+    width: 400px;  
+    /*border: 2px solid #999;*/
+    margin-top: 150px;
+    margin-left: 5px;
+}
+
+.index-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mengatur gambar agar sesuai dengan kontainer tanpa terpotong */
+}
+
+
+/* Setting gambar di dashboard.html */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    padding: 32px;
+    gap: 16px;
+}
+
+.item-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 1px 1px darkblue;
+}
+
+.dashboard-image {
+    width: 50%;
+}
+
+.dashboard-submit {
+    background-color: darkblue;
+    padding: 4px 8px;
+    width: 80%;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Seting About */
+/* Seting About */
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+    margin-bottom: 100px;
+}
+
+.item-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.text-column {
+    height: 700px; /* Tinggi kolom yang dibatasi */
+    width: 100%;
+    padding: 16px;
+    overflow-y: scroll; /* Scroll akan muncul jika teks melebihi tinggi */
+    background-color: azure;
+    border: 1px solid darkblue;
+    box-shadow: 0px 0px 4px blue(0, 0, 0, 0.2);
+    /*margin-top: 0px;*/
+    margin-left: 5px;
+}
+
+.text-column p {
+    margin: 0 0 16px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .item-about {
+        width: 100%;
+    }
+}
+
+
+
+/* Tittle Lamp Control */
+.page-title {
+    padding: 16px;
+}
+
+.page-title h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+/* Setting Lampu */
+.Lampu-Dashboard {
+    display: grid;
+    justify-items: center;
+    max-height: calc(100vh - 200px); /* Menggunakan tinggi berdasarkan viewport */
+    overflow-y: scroll; /* Scroll akan muncul hanya jika diperlukan */
+    padding-bottom: 20px;
+}
+
+.Lampu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0px 0px 1px 1px darkblue;
+    height: 400px; 
+    width: 400px;  
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.led-location-text {
+    font-weight: 700;
+}
+
+.Lampu-image {
+    width: 200px;
+    object-fit: cover;
+    height: auto;
+}
+
+.LampuOn-submit {
+    background-color: darkblue;
+    padding: 4px 8px;
+    width: 50%;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+
+.LampuOff-submit {
+    background-color: darkblue;
+    padding: 4px 8px;
+    width: 50%;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/* Setting panah kembali */
+.Kembali-Lampu-Dashboard a {
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 11px;
+    left: 5%;
+    font-size: x-large;
+    display: block;
+}
+
+
+/* foto profil setting */
+.Foto-Profil {
+    display: grid;
+    gap: 2px;
+    padding: 16px;
+    justify-items: center;
+}
+
+.Foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+    height: 400px; 
+    width: 400px;  
+    margin-top: 150px;
+    margin-left: 5px;
+}
+
+.Foto-Location-Text {
+    font-weight: 700;
+}
+
+.FotoProfil-Image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profil-name {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.profil-nim {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.profil-prodi {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.profil-univ {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+.profil-judul {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+
